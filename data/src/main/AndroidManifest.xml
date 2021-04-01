@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.merdado.livre.data">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application>
+        <provider
+            android:authorities="${applicationId}.provider.InitProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:name="br.com.merdado.livre.provider.InitProvider" />
+
+    </application>
+</manifest>
